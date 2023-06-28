@@ -191,6 +191,18 @@ img {
   height: auto;
 }
 
+#contact .section-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  border-bottom: #59599e;
+  flex: 1;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   header {
