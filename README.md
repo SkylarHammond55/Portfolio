@@ -5,7 +5,7 @@
 My Portfolio showing my Projects to any future employers
 ## Image
 
-![image](Assets/images/WebsiteScreenshot.png)
+![image](https://github.com/SkylarHammond55/Portfolio/blob/main/Assets/Images/WebsiteScreenshot.png)
 
 ## Link
 
