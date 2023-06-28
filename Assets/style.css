@@ -1,0 +1,97 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  font-size: 2em;
+  justify-content: right;
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li {
+margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  justify-content: left;
+  margin-top: 10px;
+  display: flex;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio {
+  display: flex;
+}
+
+.portfolio a {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.portfolio a:last-child {
+  margin-right: 0;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 5px;
+  }
+
+  nav ul li {
+    margin-right: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .portfolio a {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
