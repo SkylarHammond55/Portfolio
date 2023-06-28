@@ -3,11 +3,11 @@
 ## Description
 
 My Portfolio showing my Projects to any future employers
-## Usage
+## Image
 
-![Screenshots](assets/images/websiteScreenshot.png)
+![image](Assets/images/WebsiteScreenshot.png)
 
-##Link
+## Link
 
 https://skylarhammond55.github.io/Portfolio/
 
