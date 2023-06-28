@@ -1,3 +1,6 @@
+:root {
+
+}
 /* Reset default browser styles */
 * {
   margin: 0;
@@ -28,6 +31,8 @@ nav ul {
 
 nav ul li {
   margin-right: 10px;
+  border: 2px solid #8895bc;
+
 }
 
 nav ul li a {
@@ -46,6 +51,17 @@ main {
   position: relative;
 }
 
+#ProfilePicture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-image: url(path/to/photo-overlay.png);
+  background-size: cover;
+  opacity: 0.7;
+}
+
 #subtitle {
   position: relative;
 }
@@ -57,29 +73,52 @@ main {
   margin: 25px;
   background-color: #8895bc;
   font-size: 2em;
-  
+}
 .dev-photo img {
   display: block;
   margin: auto;
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
 }
 
 .section-header {
-  text-align: left;
+  text-align: right;  
+  display: flex;
+  align-items: flex-end;
+  border-right: 2px solid #8895bc ;
+  padding-right: 25px;
+  font-size: 2em;
+  color: #59599e;
+}
+#About, #work, #contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+#About .section-header{
+  margin-left: 50px;
+}
+
+#work .section-header {
+  margin-left: 140px;
+}
+
+#contact .section-header {
+  margin-left: 80px;
+}
 .section-content {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 h2 {
   margin-bottom: 10px;
+  flex: auto;
 }
 
 img {
@@ -89,6 +128,31 @@ img {
 
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#large-app {
+  flex-basis: 100%;
+}
+
+#large-app img {
+  width: 100%;
+  height: auto;
+}
+
+#small-app {
+  flex-basis: calc(25% - 10px);
+}
+
+#small-app img {
+  width: 100%;
+  height: auto;
+}
+
+#large-app img,
+#small-app img {
+  border: 5px solid #8895bc; 
 }
 
 .portfolio a {
@@ -123,5 +187,8 @@ img {
     flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  #small-app {
+    flex-basis: calc(50% - 10px);
   }
 }
