@@ -1,90 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./Assets/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Portfolio</title>
+ <link rel="stylesheet" href="Assets\style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <h1>Skylar Hammond</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+   <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+     <div class="container">
+       <a class="navbar-brand" href="#">Skylar Hammond</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#about">About Me</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#work">Work</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#contact">Contact Me</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
   
-  <main>
-    <section class="dev-photo">
-      <img src="./Assets/Images/My project.jpg" alt="Background Photo">
+<main>
+  <section class="dev-photo">
+    <div class="profile-pic-container">
       <img id="ProfilePicture" src="./Assets/Images/ProfilePic.jpg" alt="ProfilePicture">
-      <div id = subtitle>
-        <p>A Work in Progress</p>
-      </div>
-    </section>
-    <section id="About" class ="section">
-      <div class ="section-header">
-        <h2>About Me</h2>
-      </div>
-      <div class ="section-content">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque incidunt hic assumenda exercitationem dolor illo, delectus doloribus, id natus quam sint velit modi fugiat, praesentium soluta. Incidunt cupiditate dolorum voluptas.
+     </div>
+    <div id="subtitle">
+      <p>A Work in Progress</p>
+    </div>
+</section>
+
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="section-content">
+        <p>
+          Hello and welcome to my digital space! I'm Skylar Hammond, a passionate and versatile Full Stack Developer dedicated to crafting innovative and efficient web solutions. With a foundation in both front-end and back-end technologies, I thrive on the challenge of creating seamless, user-friendly applications that push the boundaries of what is possible on the web..
           <BR></BR>
-        Quisquam, officia recusandae magni iusto dolorum facere, in, ab a consectetur enim nulla corporis nemo laborum pariatur sit eveniet veritatis aliquam aliquid rerum voluptatibus adipisci doloremque inventore amet? Eveniet, mollitia.
+          My journey into the world of web development began with a fascination for transforming ideas into tangible digital experiences. Armed with a solid understanding of HTML, CSS, and JavaScript, I embarked on a continuous learning adventure that led me to master frameworks like React for dynamic front-end development. On the server side, I've honed my skills in languages such as Node.js, building robust APIs and implementing scalable solutions. Whether it's designing responsive user interfaces or architecting powerful databases, I am committed to delivering solutions that not only meet but exceed client expectations.
           <BR></BR>
-        Quae praesentium, veniam fuga veritatis enim officia eaque cupiditate nemo natus dolore id repellendus amet quia eligendi accusantium neque nisi quidem vero? Harum quibusdam quam voluptatem quidem saepe sint odio.</p>
+          In addition to my technical prowess, I am a firm believer in the power of collaboration and effective communication. I thrive in dynamic environments where teamwork is key, and I bring a problem-solving mindset to every project. My goal is not only to write code but to craft digital experiences that leave a lasting impact. Join me on this journey through my portfolio, and let's explore the possibilities of the digital realm together!</p>
       </div>
     </section>
     
-    <section id="work" class ="section">
-      <div class ="section-header">
-        <h2>Work</h2>
+    <section id="work" class="section">
+      <div class="section-header">
+        <h2>My Work</h2>
       </div>
-      <div class="portfolio" class = "section-content">
+      <div class="portfolio section-content">
         <div id="large-app">
           <a href="https://skylarhammond55.github.io/horiseon-refactor/">
-          <img src="Assets/Images/9-hoechsten-berge-thumbnail-1000x300-1.jpg" alt="Application 1">
+          <img src="Assets/Images/9-hoechsten-berge-thumbnail-1000x300-1.jpg" alt="Horiseon Refactor">
           <div class = "caption">Horiseon Refactor</div>
           </a>
         </div>
-        <div id="small-app">  
+        <div id="small-app"> 
           <a href="https://skylarhammond55.github.io/prework-study-guide/">
-          <img src="Assets/Images/Studyguide.webp" alt="Application 2">
+          <img src="Assets/Images/Studyguide.webp" alt="Study Guide">
           <div class = "caption">Study Guide</div>
         </a>
         </div>
-        <div id="small-app">  
+        <div id="small-app"> 
           <a href="https://jmcmillenmusic.github.io/celestracker/">
-          <img src="Assets/Images/Stary.jpg" alt="Application 3">
+          <img src="Assets/Images/Stary.jpg" alt="CelesTracker">
           <div class = "caption">CelesTracker</div>
         </a>
         </div>
-        <div id="small-app">  
-          <a href="application4.html">
-          <img src="https://placehold.co/100x50?text=Coming\nSoon" alt="Application 4">
-          <div class = "caption">Coming Soon</div>
+        <div id="small-app"> 
+          <a href="https://github.com/DHM0010/ppldex">
+          <img src="Assets/Images/houses.jpg" alt="HPDex">
+          <div class = "caption">HPDex</div>
         </a>
         </div>
         <div id="small-app">
         <a href="application5.html">
-          <img src="https://placehold.co/100x50?text=Coming\nSoon" alt="Application 5">
+          <img src="https://placehold.co/100x50?text=Coming\nSoon" alt="Coming Soon">
           <div class = "caption">Coming Soon</div>
           </a>
         </div>
       </div>
-    </section>
+     </section>
+     
     
-    <section id="contact" class="section">
-      <div class ="section-header">
-        <h2>Contact<br>Me</h2>
+     <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
       </div>
-      <div class ="section-content">
-        <p>512.722.3567</p><p><a href="mailto:skylarhammond55@gmail.com">SkylarHammond55@gmail.com</a></p>  <p><a href="https://github.com/SkylarHammond55">github</a></p>
+      <div class="section-content">
+        <p><strong>Phone:</strong> 512.722.3567</p>
+        <p><strong>Email:</strong> <a href="mailto:skylarhammond55@gmail.com">SkylarHammond55@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/SkylarHammond55">View My Projects</a></p>
       </div>
-    </section>
+     </section>
+     
   </main>
   
   <script src="script.js"></script>
